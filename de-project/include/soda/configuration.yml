@@ -1,0 +1,14 @@
+data_source retail:
+  type: bigquery
+  connection:
+    account_info_json_path: /usr/local/airflow/include/gcp/service_account.json
+    auth_scopes:
+    - https://www.googleapis.com/auth/bigquery
+    - https://www.googleapis.com/auth/cloud-platform
+    - https://www.googleapis.com/auth/drive
+    project_id: 'effective-light-432316-f3'
+    dataset: first_project_retail
+soda_cloud:
+  host: cloud.us.soda.io
+  api_key_id: 71c06f67-baeb-4131-be5e-eed506c310b2
+  api_key_secret: uJqbKEtHp8U3-rcTLpeO8XNxqNgPfSSJN4vl5udmxifSB8jK28Aerg
